@@ -1,4 +1,4 @@
-````markdown
+
 # Live Church Translation (EN→RU, offline)
 
 Low-latency live translation for church services.  
