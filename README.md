@@ -1,3 +1,4 @@
+````markdown
 # Live Church Translation (EN→RU, offline)
 
 Low-latency live translation for church services.  
@@ -9,13 +10,13 @@ Low-latency live translation for church services.
 
 ## ✨ Features
 - Runs offline after first model download (no cloud calls)
-- Fast Whisper ASR with WebRTC VAD
+- Fast Whisper ASR + WebRTC VAD
 - English → Russian out of the box (swap models for other pairs)
 - CPU-friendly **Silero TTS** (optional **Piper**)
 - Phone listeners open `http://<server-ip>:8765` and tap **Join the Russian Channel**
 
 > **Important:** Any IP shown in demos/printouts (e.g., `http://192.168.0.10:8765`) is an **example**.  
-> The **church will provide the actual IP and port** to use on the day.
+> The **church will provide the actual IP and port** on the day.
 
 ---
 
@@ -40,12 +41,17 @@ pip install -r requirements.txt
 
 # 3) run
 python live_translate.py --whisper small --device auto --tts-engine silero --lan-port 8765
-```
+````
 
-#On the same Wi-Fi, open on phones:
-`http://<server-ip>:8765` → tap Join the Russian Channel.
+### Open on phones (same Wi-Fi)
 
-##Common options
+`http://<server-ip>:8765` → tap **Join the Russian Channel**.
+
+---
+
+## ⚙️ Common options
+
+```bash
 # Device
 --device auto|cuda|cpu
 
@@ -67,7 +73,24 @@ python live_translate.py --whisper small --device auto --tts-engine silero --lan
 --no-lan                       # disable web broadcast
 
 # Glossary
---glossary glossary.ru.json
+--glossary glossary.ru.json    # path to your glossary file
+```
+
+**Piper (optional):**
+
+```bash
+--piper-exe /path/to/piper --piper-voice /path/to/voice.onnx
+# or set env:
+PIPER_EXE=...  VOICE_PATH=...
+```
+
+---
+
+## 📁 Glossary (term fixes after MT)
+
+Create a JSON file and pass it via `--glossary glossary.ru.json`:
+
+```json
 {
   "target_lang": "rus_Cyrl",
   "replacements": {
@@ -75,12 +98,81 @@ python live_translate.py --whisper small --device auto --tts-engine silero --lan
     "Gospel": "Евангелие"
   }
 }
+```
 
+---
 
-##🔐 Privacy
-- The web page is receive-only; it does not record listener microphones.
+## 🖨 Printables for members (EN & RU)
 
-##🧾 License
+One-page sheets with **4 steps + Quick Help**.
+They clearly state the printed IP is **example only**; the church provides the actual address.
 
-- Code: MIT (see LICENSE)
+Suggested files:
 
+* `printables/Live-Translation-QuickStart-EN.html`
+* `printables/Live-Translation-QuickStart-RU.html`
+
+Print at 100% scale (portrait). You can **type** your real Wi-Fi name, password, and server address in the files before printing, or write them by hand.
+
+---
+
+## 🔊 Hotkeys (if `keyboard` is installed)
+
+* **F1** – mute/unmute broadcast
+* **F2** – switch voice (male ↔ female)
+* **ESC twice** – quit
+
+---
+
+## 🛠 Troubleshooting
+
+* **No sound on phone:** same Wi-Fi, reload the page, tap **Join** again; check mute switch & volume.
+* **Choppy audio:** move closer to router, turn off VPN/hotspot, pause downloads.
+* **GPU not used:** try `--device cuda`, verify drivers/CUDA; otherwise use CPU.
+* **Wrong mic/device:** set OS input device and/or `sounddevice` device index.
+
+---
+
+## 🔐 Privacy
+
+The web page is **receive-only**; it **does not** record listener microphones.
+
+---
+
+## 🧾 License
+
+* **Code:** MIT (see `LICENSE`)
+* **Docs & printables:** CC BY 4.0 (see `LICENSE-CC-BY-4.0.txt`)
+
+---
+
+## 🙌 Attribution (optional)
+
+Built by **Nitesh Morem** with assistance from ChatGPT.
+AI-generated output was reviewed and validated by the author.
+
+---
+
+## 📍 Project structure (suggested)
+
+```
+.
+├─ live_translate.py
+├─ requirements.txt
+├─ README.md
+├─ LICENSE
+├─ LICENSE-CC-BY-4.0.txt
+├─ printables/
+│  ├─ Live-Translation-QuickStart-EN.html
+│  └─ Live-Translation-QuickStart-RU.html
+└─ glossary.ru.json         # optional
+```
+
+---
+
+## 📫 Contact
+
+Questions or ideas? Open an issue or PR.
+
+```
+```
