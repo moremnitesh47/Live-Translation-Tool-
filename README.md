@@ -4,7 +4,7 @@
 Low-latency live translation for church services.  
 **Pipeline:** Mic → VAD (WebRTC) → ASR (faster-whisper) → MT (Marian/NLLB) → TTS (Silero/Piper) → **LAN broadcast** to phones via a simple web page (no app).
 
-> Built by **Nitesh Morem**. Docs under **CC BY 4.0**; code under **MIT**.
+> Built by **Nitesh Morem**. code under **MIT License**.
 
 ---
 
@@ -142,37 +142,12 @@ The web page is **receive-only**; it **does not** record listener microphones.
 ## 🧾 License
 
 * **Code:** MIT (see `LICENSE`)
-* **Docs & printables:** CC BY 4.0 (see `LICENSE-CC-BY-4.0.txt`)
 
 ---
 
 ## 🙌 Attribution (optional)
 
-Built by **Nitesh Morem** with assistance from ChatGPT.
+Built by **Nitesh Morem**.
 AI-generated output was reviewed and validated by the author.
 
 ---
-
-## 📍 Project structure (suggested)
-
-```
-.
-├─ live_translate.py
-├─ requirements.txt
-├─ README.md
-├─ LICENSE
-├─ LICENSE-CC-BY-4.0.txt
-├─ printables/
-│  ├─ Live-Translation-QuickStart-EN.html
-│  └─ Live-Translation-QuickStart-RU.html
-└─ glossary.ru.json         # optional
-```
-
----
-
-## 📫 Contact
-
-Questions or ideas? Open an issue or PR.
-
-```
-```
