@@ -1,2 +1,2 @@
 ## License
-- Code: MIT (see `LICENSE`)
+- Code: MIT
