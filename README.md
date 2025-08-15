@@ -4,7 +4,7 @@
 Low-latency live translation for church services.  
 **Pipeline:** Mic → VAD (WebRTC) → ASR (faster-whisper) → MT (Marian/NLLB) → TTS (Silero/Piper) → **LAN broadcast** to phones via a simple web page (no app).
 
-> Built by **Nitesh Morem**. code under **MIT License**.
+> Built by **Nitesh Morem**. • Docs under CC BY 4.0 • Code under **MIT License**.
 
 ---
 
