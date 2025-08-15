@@ -1,0 +1,18 @@
+{
+  "target_lang": "rus_Cyrl",
+  "replacements": {
+    "Holy Spirit": "Святой Дух",
+    "Holy Ghost": "Святой Дух",
+    "Holy Communion": "Святое Причастие",
+    "Eucharist": "Евхаристия",
+    "Gospel": "Евангелие",
+    "Old Testament": "Ветхий Завет",
+    "New Testament": "Новый Завет",
+    "Sabbath": "Суббота",
+    "Baptism": "Крещение",
+    "Pentecost": "Пятидесятница",
+    "Passover": "Пасха",
+    "Grace": "Благодать",
+    "Salvation": "Спасение"
+  }
+}

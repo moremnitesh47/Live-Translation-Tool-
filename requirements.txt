@@ -1,0 +1,13 @@
+# Core
+faster-whisper==1.0.3
+ctranslate2>=4.4.0
+transformers>=4.41.0
+sentencepiece>=0.2.0
+accelerate>=0.33.0
+# Audio & utilities
+sounddevice>=0.4.6
+webrtcvad>=2.0.10
+numpy>=1.24.0
+rich>=13.7.0
+# Optional (if you plan to play back audio using pydub or sounddevice)
+pydub>=0.25.1
