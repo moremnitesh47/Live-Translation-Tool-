@@ -17,6 +17,7 @@ Low-latency live translation for church services.
 
 > **Important:** Any IP shown in demos/printouts (e.g., `http://192.168.0.10:8765`) is an **example**.  
 > The **church will provide the actual IP and port** on the day.
+> As this tool was developed for use case of an adventist church in Cyprus to help translate the devotion or sermon for large number of people who dont speak English especially the old citizens.
 
 ---
 
