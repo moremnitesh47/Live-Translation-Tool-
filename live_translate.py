@@ -12,7 +12,7 @@ os.environ.setdefault("MKL_NUM_THREADS", str(max(1, (os.cpu_count() or 4) - 1)))
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 os.environ.setdefault("HF_HUB_DISABLE_SYMLINKS_WARNING", "1")
 
-# Windows: add CUDA bin dirs if present so DLLs load when you switch to --device cuda
+# Windows: CUDA bin dirs if present - DLLs load when switcheds witch to --device cuda
 if sys.platform.startswith("win"):
     for bin_dir in glob.glob(r"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v*\bin"):
         try:
