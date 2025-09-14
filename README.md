@@ -104,17 +104,7 @@ Create a JSON file and pass it via `--glossary glossary.ru.json`:
 
 ---
 
-## 🖨 Printables for members (EN & RU)
 
-One-page sheets with **4 steps + Quick Help**.
-They clearly state the printed IP is **example only**; the church provides the actual address.
-
-Suggested files:
-
-* `printables/Live-Translation-QuickStart-EN.html`
-* `printables/Live-Translation-QuickStart-RU.html`
-
-Print at 100% scale (portrait). You can **type** your real Wi-Fi name, password, and server address in the files before printing, or write them by hand.
 
 ---
 
