@@ -131,10 +131,16 @@ The web page is **receive-only**; it **does not** record listener microphones.
 
 ---
 
+## 📊 Performance
+
+* **intel i5:** Avg latency of 4000-5000 ms (with whisper tiny.en **34M parameters**.)
+* **intel i7:** Avg latency 1000-1200 ms (with whisper tiny.en and base.en **(74M)** models)
+* **RTX 3050(4GB):** On CUDA Avg latency 100-500 ms (with Whisper small.en **(244M)** model )
+
+---
+
 ## 🧾 License
 
 * **Code:** MIT (see `LICENSE`)
-
----
 
 
