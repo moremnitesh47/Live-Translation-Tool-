@@ -23,7 +23,8 @@ Low-latency live translation for church services.
 
 ## 📦 Requirements
 - Python **3.9+** (Windows/macOS/Linux)
-- Optional NVIDIA GPU (CUDA) for faster Whisper
+- intel i7 core processor or higher
+- NVIDIA GPU (CUDA) RTX recommended 
 - `pip install -r requirements.txt`
 
 ---
