@@ -137,9 +137,4 @@ The web page is **receive-only**; it **does not** record listener microphones.
 
 ---
 
-## 🙌 Attribution (optional)
 
-Built by **Nitesh Morem**.
-AI-generated output was reviewed and validated by the author.
-
----
