@@ -1,5 +1,5 @@
 
-# Live Church Translation (EN→RU, offline)
+# Live Church Translation (EN→RU, offline)---(WORK in Progress ....)
 
 Low-latency live translation for church services.  
 **Pipeline:** Mic → VAD (WebRTC) → ASR (faster-whisper) → MT (Marian/NLLB) → TTS (Silero/Piper) → **LAN broadcast** to phones via a simple web page (no app).
